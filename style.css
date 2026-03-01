@@ -1,0 +1,181 @@
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  background-color: #c7c7c7;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  background-color: #c7c7c7;
+}
+.card {
+  display: flex;
+  width: 80%;
+
+  background: linear-gradient(
+    90deg,
+    rgba(114, 111, 111, 0.521) 0%,
+    rgba(235, 235, 235, 0.541) 50%,
+    rgba(119, 118, 118, 0.459) 100%
+  );
+  flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 10px #381e2e9c;
+  overflow: hidden;
+  text-wrap: wrap;
+  color: rgb(37, 23, 21);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cadrincard {
+  margin: 40px 0px 40px;
+  display: flex;
+  box-shadow: 0 0 10px 10px #41383894;
+  width: 60%;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  justify-self: center;
+  border-radius: 4px;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+  display: block;
+  font-family: EBGaramond, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.imgbox {
+  max-width: 80%;
+  max-height: 79rem;
+  border: 4px solid black;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-item {
+  max-width: 80%;
+  height: 28rem;
+  border: 4px solid black;
+  overflow: hidden;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+a {
+  font-size: 18px;
+  transition:
+    text-shadow 100ms,
+    font-size 100ms;
+}
+
+a:hover {
+  text-shadow: 0 0 10px #000000ce;
+  font-size: 20px;
+}
+
+li,
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  font-family: Comfortaa, serif;
+}
+
+p {
+  text-align: left;
+}
+.bio,
+.mental {
+  width: 80%;
+  display: block;
+  height: 550px;
+  overflow-y: scroll;
+  text-wrap: wrap;
+  transition:
+    scale 200ms,
+    box-shadow 200ms;
+}
+
+.bio:hover,
+.mental:hover {
+  scale: 1.02;
+  box-shadow: 0 0 10px 10px #381e2e9c;
+}
+
+.wrapper {
+  display: flex;
+  gap: 20px; /* расстояние между колонками */
+  max-width: 80%;
+  max-height: 80rem;
+  margin-bottom: 20px;
+}
+
+.left {
+  flex: 1; /* занимает половину */
+  min-height: 400px;
+  background: #ddd;
+  border: 4px solid black;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* расстояние между 2 и 3 */
+}
+
+.top,
+.bottom {
+  flex: 1; /* делим высоту поровну */
+  background: #ddd;
+  border: 4px solid black;
+}
+.left,
+.top,
+.bottom {
+  overflow: hidden;
+  box-shadow: 0 0 10px 10px #381e2e9c;
+}
+
+.left img,
+.top img,
+.bottom img {
+  object-fit: cover;
+  object-position: 50% 11%;
+  width: 100%;
+  height: 100%;
+}
+
+.left .right {
+  border-radius: 10px;
+
+  max-height: 400px;
+}
